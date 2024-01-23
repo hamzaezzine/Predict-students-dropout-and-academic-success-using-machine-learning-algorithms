@@ -97,7 +97,7 @@ Features Information:
 
 ## Data Preprocessing
 
-1. Selection of important classes
+**1. Selection of important classes**
 
 ![img](images/img1.png)
 
@@ -109,7 +109,7 @@ Therefore, remove all rows from the "Enrolled" class:
 ![img](images/img2.png)
 
 
-2. Select important features  
+**2. Select important features**     
 
 A correlation heatmap is a visual representation of the correlation between two or more variables. It is displayed in the form of a grid, where each cell represents the correlation between two variables. Colors in the heatmap are typically used to indicate the strength of the correlation, ranging from red (strong positive correlation) to blue (strong negative correlation).  
 
@@ -122,20 +122,20 @@ The correlation with all features with the target:
 then we delete all features that have a negative correlation with target : 
 ![img](images/img5.png)  
 
-3. Removing outliers  
-Removing outliers is an important step in the data preprocessing process. Outliers, also called outliers or anomalies, are observations that differ significantly from the rest of the data and can distort statistical analyses. The presence of outliers can negatively impact the accuracy of predictive models and the validity of conclusions drawn from the data.  
+**3. Removing outliers**  
+  Removing outliers is an important step in the data preprocessing process. Outliers, also called outliers or anomalies, are observations that differ significantly from the rest of the data and can distort statistical analyses. The presence of outliers can negatively impact the accuracy of predictive models and the validity of conclusions drawn from the data.  
 
-    IQR (Interquartile Range) is a measure of statistical dispersion that assesses the variability of data. It is calculated as the difference between the third quartile (Q3) and the first quartile (Q1). IQR is a robust measure that is not sensitive to outliers, making it a useful metric for detecting outliers.
+  IQR (Interquartile Range) is a measure of statistical dispersion that assesses the variability of data. It is calculated as the difference between the third quartile (Q3) and the first quartile (Q1). IQR is a robust measure that is not sensitive to outliers, making it a useful metric for detecting outliers.
 
-    The process of removing outliers using IQR typically involves the following steps:
+  The process of removing outliers using IQR typically involves the following steps:
 
-      1. Calculation of the IQR:
+  1. Calculation of the IQR:
     IQR=Q3−Q1
-      2. Setting thresholds: Set thresholds to detect outliers. Values outside of these thresholds can be considered outliers.
+  2. Setting thresholds: Set thresholds to detect outliers. Values outside of these thresholds can be considered outliers.
 
-      3. Identification of outliers: Identify observations whose values fall outside defined thresholds. A value is considered an outlier if it is less than Q1−k×IQR or greater than Q3+k×IQR, where k is an adjustable factor determining the sensitivity of detection.
+  3. Identification of outliers: Identify observations whose values fall outside defined thresholds. A value is considered an outlier if it is less than Q1−k×IQR or greater than Q3+k×IQR, where k is an adjustable factor determining the sensitivity of detection.
 
-      4. Removal of outliers: Delete or treat observations identified as outliers depending on the chosen method
+  4. Removal of outliers: Delete or treat observations identified as outliers depending on the chosen method
 
 
 
