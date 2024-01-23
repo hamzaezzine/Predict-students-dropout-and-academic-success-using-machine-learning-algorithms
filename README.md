@@ -188,7 +188,7 @@ The boxplots of important attributes after removing outliers look like this:
 ## Models Results
 
 The result of the 6 algorithmes is : 
-![img](images/img10.png)
+![img](images/img10.PNG)
 
 1. The SVM model has the best performance in terms of accuracy, precision, recall and F1-score.  
 2. Random Forest and Logistic Regression also have high performance.  
